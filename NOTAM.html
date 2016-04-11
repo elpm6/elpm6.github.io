@@ -28,14 +28,17 @@
                     center: {lat: 50.627, lng: 1.13},
                     zoom: 8
                 });
-                var Marker = google.maps.Marker({map: map});
+                
                 var pos = {
                     lat:position.coords.latitude,
                     lng:position.coorde.longitude
                 };
                 
-                Marker.setPosition(pos);
-                map.setCenter(pos);
+                var Marker = new google.maps.Marker({
+                                                    position: pos,
+                                                    map: map,
+                                                    title: 'PPOS'
+                                                    });
            }
         </script>
         <script async defer
