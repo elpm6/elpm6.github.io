@@ -45,6 +45,12 @@
                                                    
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
+            var marker = new google.maps.Marker({
+            position: pos,
+            map: map,
+            title: 'Hello World!'
+            });
+                                                   
           });
         } else {
           // Browser doesn't support Geolocation
@@ -58,20 +64,6 @@
                               'Error: The Geolocation service failed.' :
                               'Error: Your browser doesn\'t support geolocation.');
       }
-    function initMap() {
-        var myLatLng = {lat: 50.013, lng: 1.354};
-        
-        var map = new google.maps.Map(document.getElementById('map'), {
-                                      zoom: 4,
-                                      center: myLatLng
-                                      });
-                                      
-                                      var marker = new google.maps.Marker({
-                                                                          position: myLatLng,
-                                                                          map: map,
-                                                                          title: 'Hello World!'
-                                                                          });
-    }
 	 </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDMfWfVVUPZ00cRGM1sO1v2eQI1n4bMul0&callback=initMap">
