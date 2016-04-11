@@ -30,11 +30,13 @@
                 });
                 
                 var myLatLng = {lat: 50.627, lng: 1.13};
-                
+            
+                var image = 'http://elpm6.github.io/plane_icon.png'
                 var marker = new google.maps.Marker({
                                                     position: myLatLng,
                                                     map: map,
-                                                    title: 'PPos'
+                                                    title: 'PPos',
+                                                    icon: image
                                                     });
                
                if (navigator.geolocation) {
