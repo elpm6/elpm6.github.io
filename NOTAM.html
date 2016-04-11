@@ -36,8 +36,8 @@
                     lng:position.coords.longitude
                 };
                                                             
-                    marker.CetPosition(pos);
-                    map.setcenter(pos);
+                    marker.setPosition(pos);
+                    map.setCenter(pos);
                 }, function() {
                                                             handleLocationError(true, marker, map.getCenter());
                                                             });
