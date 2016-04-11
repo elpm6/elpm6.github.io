@@ -28,6 +28,14 @@
                     center: {lat: 50.627, lng: 1.13},
                     zoom: 8
                 });
+                
+                var myLatLng = {lat: 50.627, lng: 1.13};
+                
+                var marker = new google.maps.marker({
+                                                    position: myLatLng,
+                                                    map: map,
+                                                    title: 'PPos'
+                                                    });
                
                if (navigator.geolocation) {
                    navigator.geolocation.getCurrentPosition(function(position) {
