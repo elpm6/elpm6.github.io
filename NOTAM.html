@@ -63,7 +63,7 @@
                    handleLocationError(false, marker, map.getCenter());
                }
                
-               var heading = google.maps.geometry.spherical.computeHeading(pos, pos);
+               var heading = google.maps.geometry.spherical.computeHeading(myLatLng, myLatLng);
                
                marker.setIcon({
                               rotation: heading
