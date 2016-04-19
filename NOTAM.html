@@ -31,10 +31,7 @@
                 
                 var myLatLng = {lat: 50.627, lng: 1.13};
                 
-                var poshead = {
-                    lat:position.coords.latitude,
-                    lng:position.coords.longitude
-                };
+                var poshead = navigator.geolocation.watchPosition();
                 
                 var ctaLayer = new google.maps.KmlLayer({
                                                         url: 'http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml',
