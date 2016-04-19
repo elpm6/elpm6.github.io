@@ -30,7 +30,6 @@
                 });
                 
                 var myLatLng = {lat: 50.627, lng: 1.13};
-                var myLitLng = {lat: 45.00, lng: 5.00};
                 
                 var ctaLayer = new google.maps.KmlLayer({
                                                         url: 'http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml',
@@ -45,8 +44,6 @@
                                                     title: 'PPos',
                                                     icon: image
                                                     });
-                
-               
                
                if (navigator.geolocation) {
                    navigator.geolocation.watchPosition(function(position) {
@@ -63,12 +60,6 @@
                } else {
                    handleLocationError(false, marker, map.getCenter());
                }
-               
-               var heading = google.maps.geometry.spherical.computeHeading(myLatLng, myLitLng);
-               
-               marker.setIcon({
-                              rotation: heading
-                              });
             }
         
         function handleLocationError(browserHasGeoLocation, marker, pos) {
@@ -76,7 +67,7 @@
         }
         </script>
         <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMfWfVVUPZ00cRGM1sO1v2eQI1n4bMul0&callback=initMap&libraries=geometry">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMfWfVVUPZ00cRGM1sO1v2eQI1n4bMul0&callback=initMap">
             </script>
     </body>
 </html>
