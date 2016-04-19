@@ -31,6 +31,11 @@
                 
                 var myLatLng = {lat: 50.627, lng: 1.13};
                 
+                var poshead = {
+                    lat:position.coords.latitude,
+                    lng:position.coords.longitude
+                };
+                
                 var ctaLayer = new google.maps.KmlLayer({
                                                         url: 'http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml',
                                                         map: map
@@ -63,7 +68,7 @@
                    handleLocationError(false, marker, map.getCenter());
                }
                
-               var heading = google.maps.geometry.spherical.computeHeading(pos, pos);
+               var heading = google.maps.geometry.spherical.computeHeading(poshead, poshead);
                
                marker.setIcon({
                               rotation: heading
