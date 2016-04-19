@@ -32,7 +32,7 @@
                 var myLatLng = {lat: 50.627, lng: 1.13};
                 
                 var ctaLayer = new google.maps.KmlLayer({
-                                                        url: ' http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml',
+                                                        url: 'http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml',
                                                         map: map
                                                         });
                                                         
@@ -44,6 +44,8 @@
                                                     title: 'PPos',
                                                     icon: image
                                                     });
+                
+               
                
                if (navigator.geolocation) {
                    navigator.geolocation.watchPosition(function(position) {
@@ -60,6 +62,12 @@
                } else {
                    handleLocationError(false, marker, map.getCenter());
                }
+               
+               var heading = google.maps.geometry.spherical.computeHeading(pos,pos);
+               
+               marker.setIcon({
+                              rotation: heading
+                              });
             }
         
         function handleLocationError(browserHasGeoLocation, marker, pos) {
