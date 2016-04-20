@@ -94,5 +94,5 @@ DecimalLong(k,1) = -DecimalLong(k,1);
 end
 end
 
-%kmlwritepoint('NOTAMoverlay',DecimalLat,DecimalLong,'Name',NOTAM_Filtered.NOTAM_ID,'Description',NOTAM_Filtered.BODY);
-kmlwritepoint('NOTAMoverlay',DecimalLat,DecimalLong,'Name',NOTAM_Filtered.NOTAM_ID);
+kmlwritepoint('NOTAMoverlay',DecimalLat,DecimalLong,'Name',NOTAM_Filtered.NOTAM_ID,'Description',NOTAM_Filtered.BODY);
+%kmlwritepoint('NOTAMoverlay',DecimalLat,DecimalLong,'Name',NOTAM_Filtered.NOTAM_ID);

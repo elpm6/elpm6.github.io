@@ -4,7 +4,7 @@
       <name>NOTAMoverlay</name>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) DUE TO WORK IN PROGRESS ON RWY 09/27 THE FOLLOWING LEAD ON/OFF LIGHTS FOR RWY 09/27 INTERSECTIONS HAVE BEEN REMOVED: HOTEL - 09 LEAD ONS/27 LEAD OFFS, MIKE - 09 LEAD OFFS/27 LEAD ONS, SIERRA - 09/27 LEAD ONS AND LEAD OFFS, WHISKEY - 09 LEAD ONS/27 LEAD OFFS. BLUE EDGE LIGHTING REMAINS SERVICEABLE AT ALL OF THE ABOVE.</description>
          <name>C1038/16</name>
          <Point>
             <coordinates>-1.33333333333333,52.8333333333333,0</coordinates>
@@ -12,7 +12,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) CRANES OPERATING TO THE WEST OF THE DHL BUILDING PSN 524934N 0012106W EAST MIDLANDS AD MAX HT 126FT AGL/432FT AMSL</description>
          <name>C1539/16</name>
          <Point>
             <coordinates>-1.35,52.8333333333333,0</coordinates>
@@ -20,7 +20,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) NEST OF CRANES IN LOW FLYING AREA 8, THE DERBY / NOTTINGHAM AVIODANCE AREA AND NIGHT SECTOR 5F WI 1NM RADIUS OF PSN 524835N 0011021W (STANFORD HALL, LEICESTERSHIRE) MAX HEIGHT 185FT AGL/450FT AMSL. 16/03/009/OPSLF</description>
          <name>K0053/16</name>
          <Point>
             <coordinates>-1.16666666666667,52.8166666666667,0</coordinates>
@@ -28,7 +28,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) SRA PROCEDURE WITHDRAWN WITH IMMEDIATE EFFECT</description>
          <name>C0988/16</name>
          <Point>
             <coordinates>-1.25,52.8,0</coordinates>
@@ -36,7 +36,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) SSR MODE 3/A CODES 1600 TO 1677 TEMPO ALLOCATED TO EXER GRIFFIN STRIKE 16, SFC-UNL. OPS CTC 01436 674321 EXTENSION 4409. 16-04-0041/AS4.</description>
          <name>B0538/16</name>
          <Point>
             <coordinates>-5,55.0666666666667,0</coordinates>
@@ -44,7 +44,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) SSR MODE 3/A CODES 1501 TO 1537, 2400 TO 2477, AND 1700 TO 1727 TEMPO ALLOCATED TO EXER JOINT WARRIOR 161. OPS CTC 01436 674321 EXTENSION 4409. 16-04-0042/AS4.</description>
          <name>B0540/16</name>
          <Point>
             <coordinates>-5,55.0666666666667,0</coordinates>
@@ -52,7 +52,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) SWANWICK MIL IS SUPPORTING 3 MAJOR EXERCISES, SFC/UNL AND WILL BE OPERATING AT CAPACITY IN THE EAST, NORTH EAST AND NORTH SECTORS. ATS PROVISION TO BOTH MILITARY AND CIVILIAN AIRCRAFT NOT INVOLVED IN THESE EXERCISES MAY BE REDUCED, OR REFUSED SUBJECT TO WORKLOAD IN ACCORDANCE WITH RAF ATM ORDERS.</description>
          <name>B0586/16</name>
          <Point>
             <coordinates>-5,55.0666666666667,0</coordinates>
@@ -60,7 +60,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) DELETE ENTRY FOR CROSS HAYES GLIDER SITE, STAFFORDSHIRE UK AIP ENR 5.5 REFERS</description>
          <name>B0434/16</name>
          <Point>
             <coordinates>-1.81666666666667,52.8,0</coordinates>
@@ -68,7 +68,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) WEF FROM 04 FEBRUARY 2016 THE AIRSPACE CURRENTLY DESIGNATED AS THE NORTH ATLANTIC MINIMUM NAVIGATION PERFORMANCE SPECIFICATIONS AIRSPACE (NAT MNPSA) WILL BE RE-NAMED AS THE NORTH ATLANTIC HIGH LEVEL AIRSPACE (NAT HLA) AND WILL ALSO INCLUDE THE BODO OCEANIC CONTROL AREA. EXISTING MNPS APPROVALS WILL REMAIN VALID UNTIL 30 JANUARY 2020 AND FLIGHT PLANS SHOULD CONTINUE TO BE ANNOTATED WITH THE LETTER 'X' IN FIELD 10 TO INDICATE THAT THE AIRCRAFT MEETS THE REQUIREMENTS OF HLA OPERATIONS. FROM JANUARY 2015 OPERATORS APPLYING FOR AUTHORISATION TO OPR IN THE NAT MNPSA HAVE BEEN REQUIRED TO BE APPROVED FOR RNP 10 OR RNP 4 AND THIS WILL REMAIN THE POLICY FOR NAT HLA APPROVAL. ALL UK OPERATORS WITH EXISTING MNPSA APPROVALS WILL BE REQUIRED TO SATISFY THE REQUIREMENTS OF RNP 10 OR RNP 4 BY 30 JANUARY 2020 TO ALLOW THEIR APPROVALS TO CONTINUE. 2016-01-0272/AS6</description>
          <name>B0126/16</name>
          <Point>
             <coordinates>-19,52.4833333333333,0</coordinates>
@@ -76,7 +76,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) ON THE 25 JAN 16 THE UK AIS WILL RELOCATE TO SWANWICK. ALL AGENCIES TO AMEND POSTAL AND CONTACTS AS FOLLOWS. NOTE EXISTING CONTACT NUMBERS REMAIN IN FORCE UNTIL 25 JAN 16 POST: AERONAUTICAL INFORMATION SERVICE (AIS) NATS SWANWICK ROOM 3115 SOPWITH WAY SOUTHAMPTON HANTS SO31 7AY UK AIP GEN 0.1 / GEN 3.1 / GEN 3.2 / ENR CHART 6-1-4-2 REFER TELEPHONE NUMBERS: UK NOTAM OFFICE 01489 612488 / 01489 612489 UK NOTAM OFFICE 07769 672014 (CONTINGENCY MOBILE) FAX (AIS/NOTAM) 01489 612490 UK AIS INFO LINE 0500 354802 / 01489 887515 UK AIS PUBLICATIONS 01489 887462 UK CHARTING SECTION 01489 887463 FOREIGN AIP LIBRARY 01489 887462 UK AIP GEN 3.1 / GEN 3.2 REFER EMAIL: AISSUPERVISOR(AT)NATS.CO.UK (GENERAL AIS ENQUIRIES) EG(UNDERSCORE)NOTAMPROP(AT)EAD.EUROCONTROL.INT (NOTAM PROPOSALS) UK AIP GEN 0.1 / GEN 3.1 / GEN 3.2 REFER</description>
          <name>B0037/16</name>
          <Point>
             <coordinates>-14.85,52.3,0</coordinates>
@@ -84,7 +84,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) SAR CONTACT DETAILS CHANGED: DELETE GEN 3.6-1.1.3 ADD: SAR AVIATION SERVICES ARE MANAGED BY THE MCA AVIATION TEAM. POST: MCA AVIATION TEAM, SPRING PLACE, 105 COMMERCIAL ROAD, SOUTHAMPTON, HAMPSHIRE, SO15 1EG PHONE: 023-8032-9100 ADD 1.1.4 IMPLEMENTATION OF SAR SERVICES FOR CIVIL AVIATION THROUGHOUT THE UK SRR IS UNDERTAKEN BY THE UK AIR RESCUE COORDINATION CENTRE(ARCC). POST: UK AERONAUTICAL RESCUE COORDINATION CENTRE, HMCG NATIONAL MARITIME OPERATIONS CENTRE, 12 KITES CROFT BUSINESS PARK, FAREHAM, HAMPSHIRE PO14 4LW PHONE: 023-8032-9100 AIP GEN 3.6-1.1.3 REFERS</description>
          <name>B0310/16</name>
          <Point>
             <coordinates>-14.85,52.3,0</coordinates>
@@ -92,7 +92,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) AMEND AIC M018/2016. RESTRICTION OF FLYING REGULATIONS - HYLANDS PARK, ESSEX - 19-22 AUGUST 2016 AMEND PARAGRAPH 1A TO READ BETWEEN 0700 ON 19 AUGUST 2016 AND 1300 HOURS ON 22 AUGUST 2016. 2016-08-0008/AS6</description>
          <name>B0501/16</name>
          <Point>
             <coordinates>-14.85,52.3,0</coordinates>
@@ -100,7 +100,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) OLD WARDEN ATZ ACTIVE. AFIS OPERATIONAL ON 130.700 DURING ATZ HOURS.</description>
          <name>L1313/16</name>
          <Point>
             <coordinates>-0.316666666666667,52.0833333333333,0</coordinates>
@@ -108,7 +108,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) ROUTES BETWEEN NORTHERN EUROPE AND SPAIN/CANARIES/LISBON FIR CHANGE ROUTE TANGO SIXTEEN (T16) IN TABLE 3.18.1 TO READ OMOKO, GONAN, ETESO, NAVIX ENR 2.2 OTHER REGULATED AIRSPACE, 3.18 REFERS</description>
          <name>B0279/16</name>
          <Point>
             <coordinates>-1.95,51.9166666666667,0</coordinates>
@@ -116,7 +116,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) CHART FREQUENCIES TO READ: APP 132.700 THAMES DIRECTOR TWR 118.075, 129.450 CITY TOWER RAD 133.450, 128.025 THAMES DIRECTOR ATIS 136.350 CITY INFORMATION UK AIP AD 2-EGLC-8-5 REFERS</description>
          <name>C1159/16</name>
          <Point>
             <coordinates>0,51.5333333333333,0</coordinates>
@@ -124,7 +124,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) FARNBOROUGH RADAR AND TOWER MAY BE PROVIDED AS A COMBINED SERVICE WITH COUPLED FREQUENCIES. AIRCRAFT FOR FARNBOROUGH LOWER AIRSPACE RADAR SERVICE SHOULD CONTACT FARNBOROUGH ON 125.250 MHZ.</description>
          <name>B0167/16</name>
          <Point>
             <coordinates>-0.783333333333333,51.2833333333333,0</coordinates>
@@ -132,7 +132,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) PIPELINE INSPECTION NOTIFICATION PROCEDURE SYSTEM (PINS) WILL TAKE PLACE IN THE FOLLOWING LOW FLYING AREAS 2, 4, 7N, 7S, 8, 9, 11N, 11S, 12, 19. 16/04/033/LFBC</description>
          <name>H1695/16</name>
          <Point>
             <coordinates>-5,55.0666666666667,0</coordinates>
@@ -140,7 +140,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) HAZARDOUS SITUATION IN SYRIA. POTENTIAL RISK TO AVIATION OVERFLYING FROM DEDICATED ANTI-AIRCRAFT WEAPONRY. IN ACCORDANCE WITH DIRECTION UNDER THE AVIATION SECURITY ACT 1982 UK REGISTERED OPERATORS SO SERVED SHALL NOT ENTER THE TERRITORY AND AIRSPACE (INCLUDING DAMASCUS FIR) OF THE SYRIAN ARAB REPUBLIC. UK OPERATORS NOT CURRENTLY SUBJECT TO DIRECTION UNDER THE AVIATION SECURITY ACT SHOULD CONTACT UK DEPARTMENT FOR TRANSPORT (DFT) BEFORE OPERATING IN THIS AREA. CONTACT DFT (+44) (0)20 7944 3260 OR (+44) (0)207 944 5999 OUT OF HOURS. ON EXPIRY OF THIS NOTAM, DETAILS WILL BE INCLUDED IN THE UK AIP ENR 1.1. AUS 15-03-0474/AS6</description>
          <name>V0017/16</name>
          <Point>
             <coordinates>-14.85,52.3,0</coordinates>
@@ -148,7 +148,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) AIRSPACE SECURITY WARNINGS ISSUED BY THE DEPARTMENT FOR TRANSPORT IN RESPONSE TO HAZARDOUS SITUATIONS WITHIN THE TERRITORY AND/OR AIRSPACE OF AFGHANISTAN, EGYPT, IRAQ, LIBYA, PAKISTAN, SOMALIA, SOUTH SUDAN, SYRIA, UKRAINE AND YEMEN. ALL OPERATORS ARE TO REFER TO THE TABLE IN UK AIP AT ENR 1.1 SECTION 1.4 FOR FURTHER DETAILS. 15-08-0100/AS6.</description>
          <name>V0022/16</name>
          <Point>
             <coordinates>-14.85,52.3,0</coordinates>
@@ -156,7 +156,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) AIR DISPLAY/AEROBATICS INCLUDING GLIDING. WI 3NM RADIUS 520512N 0001907W (OLD WARDEN AD). FOR INFO 07875 028876. 16-04-0003/AS3</description>
          <name>H0172/16</name>
          <Point>
             <coordinates>-0.316666666666667,52.0833333333333,0</coordinates>
@@ -164,7 +164,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) UNMANNED CAPTIVE BALLOON IN LOW FLYING AREA 6 WI 1NM RADIUS OF PSN 515853N 0001108W (BALDOCK, HERTFORDSHIRE) MAX HEIGHT 200FT AGL. 16/01/049/OPSLF</description>
          <name>H0362/16</name>
          <Point>
             <coordinates>-0.183333333333333,51.9833333333333,0</coordinates>
@@ -172,7 +172,7 @@
       </Placemark>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
-         <description> </description>
+         <description>E) FORMATION OF UP TO 7 MIXED-TYPE HELI OPR AREA BOUNDED BY STRAIGHT LINES JOINING THE FOLLOWING POINTS 514508N 0001309E - 514055N 0000652E AND 513232N 0000055W, THEN THE ANTI-CLOCKWISE ARC OF A CIRCLE HAVING A RADIUS OF 17 NAUTICAL MILES CENTRED ON 512812N 0002713W FROM 513232N 0000055W TO 513611N 0000311W AND STRAIGHT LINES JOINING THE FOLLOWING POINTS 513611N 0000311W - 513611N 0001830W - 515101N 0000025W - 515146N 0000006W AND 515155N 0000120E AND THE ANTI-CLOCKWISE ARC OF A CIRCLE HAVING A RADIUS OF RADIUS 8 NAUTICAL MILES CENTRED ON 515306N 0001406E FROM 515155N 0000120E TO 514508N 0001309E. AUS. 16-04-0333.</description>
          <name>H1700/16</name>
          <Point>
             <coordinates>-0.0333333333333333,51.6833333333333,0</coordinates>
