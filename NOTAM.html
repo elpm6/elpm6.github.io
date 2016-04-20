@@ -47,7 +47,7 @@
                                                         map: map
                                                         });
                                                         
-                kmlLayer.addListner('click', function(kmlEvent) {
+                kmlLayer.addListener('click', function(kmlEvent) {
                     var text = kmlEvent.featureData.description;
                     showInContentWindow(text);
                 });
