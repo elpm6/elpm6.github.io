@@ -27,6 +27,7 @@
                 </head>
     <body>
         <div id="map"></div>
+        <dic id="content-window"></div>
         <script>
             // Note: This example requires that you consent to location sharing when
             // prompted by your browser. If you see the error "The Geolocation service
@@ -75,21 +76,21 @@
                }
                
                var kmlLayer = new google.maps.KmlLayer({
-                                                       url: 'http://elpm6.github.io/NOTAMoverlay.kml',
-                                                       suppressInfoWindows: true,
-                                                       map: map
-                                                       });
+                url: 'http://elpm6.github.io/NOTAMoverlay.kml',
+                suppressInfoWindows: true,
+                map: map
+               });
                                                        
-                                                       kmlLayer.addListener('click', function(kmlEvent) {
-                                                                            var text = kmlEvent.featureData.description;
-                                                                            showInContentWindow(text);
-                                                                            });
+               kmlLayer.addListener('click', function(kmlEvent) {
+                    var text = kmlEvent.featureData.description;
+                        showInContentWindow(text);
+                    });
                                                                             
-                                                                            
-                                                                            function showInContentWindow(text) {
-                                                                                var sidediv = document.getElementById('content-window');
-                                                                                sidediv.innerHTML = text;
-                                                                            }
+                                                                    
+                  function showInContentWindow(text) {
+                    var sidediv = document.getElementById('content-window');
+                        sidediv.innerHTML = text;
+                  }
             }
         
         function handleLocationError(browserHasGeoLocation, marker, pos) {
