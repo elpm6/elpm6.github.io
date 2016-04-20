@@ -94,3 +94,4 @@ DecimalLong(k,1) = -DecimalLong(k,1);
 end
 end
 
+kmlwritepoint('NOTAMoverlay',DecimalLat,DecimalLong,'Name','Description',);
