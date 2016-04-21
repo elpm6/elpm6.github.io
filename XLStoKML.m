@@ -75,6 +75,7 @@ MinutesLong = Longitude(:,4:5);
 for k = 1:RowNumber(1,1)
 DegreesLongDBL(k,:) = str2double(DegreesLong(k,:));
 MinutesLongDBL(k,:) = str2double(MinutesLong(k,:));
+RadiusArray(k,:) = str2double(Radius(k,:));
 end
 
 DegreesLongDBL(isnan(DegreesLongDBL))=0;
@@ -94,5 +95,23 @@ DecimalLong(k,1) = -DecimalLong(k,1);
 end
 end
 
-kmlwritepoint('NOTAMoverlay',DecimalLat,DecimalLong,'Name',NOTAM_Filtered.NOTAM_ID,'Description',NOTAM_Filtered.BODY);
-%kmlwritepoint('NOTAMoverlay',DecimalLat,DecimalLong,'Name',NOTAM_Filtered.NOTAM_ID);
+
+for k=1:RowNumber(1,1)
+    h =1 ;
+for alpha=0:pi/200:(2*pi-pi/200)
+     eps(50);
+     circle(h,1) = -1.33333333333333 + RadiusArray(k,1)/60*cos(alpha);
+     circle(h,2) = 52.8333333333333 + RadiusArray(k,1)/60*sin(alpha);
+     h=h+1;
+end
+DecimalLongCircle(:,k) = circle(:,1);
+DecimalLatCircle(:,k) = circle(:,2);
+end
+ 
+DecimalLatCircle = transpose(DecimalLatCircle);
+DecimalLongCircle = transpose(DecimalLongCircle);
+NOTAM_BRIEF = char(NOTAM_Filtered.BODY);
+NOTAM_NAME = char(NOTAM_Filtered.NOTAM_ID);
+
+% kmlwritepolygon('NOTAMoverlay',DecimalLatCircle,DecimalLongCircle,'Name',NOTAM_NAME,'Description',NOTAM_BRIEF);
+kmlwritepolygon('NOTAMoverlay',DecimalLatCircle,DecimalLongCircle);
