@@ -95,10 +95,12 @@ DecimalLong(k,1) = -DecimalLong(k,1);
 end
 end
 
+NOTAM_NAME = char(NOTAM_Filtered.NOTAM_ID);
+NOTAM_BRIEF = char(NOTAM_Filtered.BODY);
 
 for k=1:RowNumber(1,1)
     h =1 ;
-for alpha=0:pi/200:(2*pi-pi/200)
+for alpha=0:pi/200:2*pi
      eps(50);
      circle(h,1) = DecimalLong(k,1) + (RadiusArray(k,1)/60*cos(alpha))*cos((DecimalLong(k,1)*pi)/180);
      circle(h,2) = DecimalLat(k,1) + (RadiusArray(k,1)/60*sin(alpha))*cos((DecimalLat(k,1)*pi)/180);
@@ -106,22 +108,14 @@ for alpha=0:pi/200:(2*pi-pi/200)
 end
 DecimalLongCircle(:,k) = circle(:,1);
 DecimalLatCircle(:,k) = circle(:,2);
+circles(k,:) = geoshape(DecimalLatCircle(:,k),DecimalLongCircle(:,k),'Name',NOTAM_NAME);
 end
  
 DecimalLatCircle = transpose(DecimalLatCircle);
 DecimalLongCircle = transpose(DecimalLongCircle);
-NOTAM_BRIEF = char(NOTAM_Filtered.BODY);
-NOTAM_NAME = char(NOTAM_Filtered.NOTAM_ID);
 
-% for k=1:RowNumber(1,1)
-% Polygon(k,:) = geoshape(DecimalLatCircle(1,:),DecimalLongCircle(1,:));
-% end
-% 
-% b=[1:22];
-% b=transpose(b);
-% c = char(b);
 
- kmlwritepolygon('NOTAMoverlay',DecimalLatCircle,DecimalLongCircle);
 
 % kmlwritepoint('NOTAMoverlay',DecimalLat,DecimalLong,'Name',NOTAM_NAME,'Description',NOTAM_BRIEF);
-% kmlwritepolygon('NOTAMoverlay',DecimalLatCircle,DecimalLongCircle);
+
+kmlwrite('NOTAMoverlay.kml',circles,'Name',NOTAM_Filtered.NOTAM_ID,'Description',NOTAM_Filtered.BODY);
