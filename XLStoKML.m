@@ -113,7 +113,10 @@ DecimalLongCircle = transpose(DecimalLongCircle);
 NOTAM_BRIEF = char(NOTAM_Filtered.BODY);
 NOTAM_NAME = char(NOTAM_Filtered.NOTAM_ID);
 
-Polygon = geoshape(DecimalLatCircle(1,:),DecimalLongCircle(1,:));
+for k=1:RowNumber(1,1)
+Polygon(k,:) = geoshape(DecimalLatCircle(1,:),DecimalLongCircle(1,:));
+end
+
 kmlwrite('NOTAMoverlay',Polygon);
 % kmlwritepoint('NOTAMoverlay',DecimalLat,DecimalLong,'Name',NOTAM_NAME,'Description',NOTAM_BRIEF);
 % kmlwritepolygon('NOTAMoverlay',DecimalLatCircle,DecimalLongCircle);
