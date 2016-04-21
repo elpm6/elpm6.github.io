@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
    <Document>
-      <name>NOTAMoverlay</name>
+      <name>NOTAMOverlay</name>
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
          <description>E) DUE TO WORK IN PROGRESS ON RWY 09/27 THE FOLLOWING LEAD ON/OFF LIGHTS FOR RWY 09/27 INTERSECTIONS HAVE BEEN REMOVED: HOTEL - 09 LEAD ONS/27 LEAD OFFS, MIKE - 09 LEAD OFFS/27 LEAD ONS, SIERRA - 09/27 LEAD ONS AND LEAD OFFS, WHISKEY - 09 LEAD ONS/27 LEAD OFFS. BLUE EDGE LIGHTING REMAINS SERVICEABLE AT ALL OF THE ABOVE.</description>
