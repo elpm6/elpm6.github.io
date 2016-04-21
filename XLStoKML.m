@@ -96,7 +96,7 @@ end
 end
 
 
-for k=1:1
+for k=1:RowNumber(1,1)
     h =1 ;
 for alpha=0:pi/200:(2*pi-pi/200)
      eps(50);
