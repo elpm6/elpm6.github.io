@@ -100,8 +100,8 @@ for k=1:RowNumber(1,1)
     h =1 ;
 for alpha=0:pi/200:(2*pi-pi/200)
      eps(50);
-     circle(h,1) = -1.33333333333333 + RadiusArray(k,1)/60*cos(alpha);
-     circle(h,2) = 52.8333333333333 + RadiusArray(k,1)/60*sin(alpha);
+     circle(h,1) = DecimalLong(k,1) + RadiusArray(k,1)/60*cos(alpha);
+     circle(h,2) = DecimalLat(k,1) + RadiusArray(k,1)/60*sin(alpha);
      h=h+1;
 end
 DecimalLongCircle(:,k) = circle(:,1);
