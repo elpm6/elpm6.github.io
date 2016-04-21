@@ -114,4 +114,4 @@ NOTAM_BRIEF = char(NOTAM_Filtered.BODY);
 NOTAM_NAME = char(NOTAM_Filtered.NOTAM_ID);
 
 % kmlwritepolygon('NOTAMoverlay',DecimalLatCircle,DecimalLongCircle,'Name',NOTAM_NAME,'Description',NOTAM_BRIEF);
-kmlwritepolygon('NOTAMoverlay',DecimalLatCircle,DecimalLongCircle);
+% kmlwritepolygon('NOTAMoverlay',DecimalLatCircle,DecimalLongCircle);
