@@ -6,14 +6,11 @@ NOTAM(:,1:7) = []; % Eliminate bullcrap columns
 NOTAM(1:2,:) = [];
 NOTAM.Properties.VariableNames = {'NOTAM_ID' 'FROM' 'TO' 'Q_CODE' 'POSITION' 'POSITION_RADIUS' 'LOWER_ALT' 'UPPER_ALT' 'IFR_VFR' 'FLIGHT_PHASE' 'LOWER_FL' 'UPPER_FL' 'BODY'};
 
-%NOTAM.FROM = datedisp(NOTAM.FROM,'InputFormat','yyyy/MM/dd HH:mm');
-%d = datestr(38792.25,'yyyy/MM/dd HH:mm');
-
-% Position_Radius = table2array(NOTAM(:,6));
+% Renames the variable columns to the above, was prior var1, var2....
 
 NOTAM_Filtered = NOTAM;
-RowNumber = size(NOTAM(:,1));
-pseudo_i = 1;
+RowNumber = size(NOTAM(:,1));               
+pseudo_i = 1;       
 for i = 1:1:RowNumber(1,1)
     Check_cell = char(NOTAM{i,6});
     Check_cell = size(Check_cell);
@@ -22,13 +19,14 @@ for i = 1:1:RowNumber(1,1)
     else
         pseudo_i = pseudo_i + 1;
     end
-end
+end                                 % for loop changes position and radius
+                                    % to char
 
 Position_Radius = NOTAM_Filtered{:,6};
 Position_Radius = char(Position_Radius);
 LatitudeNS = Position_Radius(:,1:5);
 LongitudeEW = Position_Radius(:,6:11);
-Radius = Position_Radius(:,12:14);
+Radius = Position_Radius(:,12:14);          % Extracts different fields
 
 RowNumber = size(NOTAM_Filtered);
 
@@ -51,13 +49,14 @@ Long = LongitudeEW(k,1:5);
 Long = str2num(Long);
 Longitude(k,1) = -Long;
 end
-end
+end                                     % Changes data type a negate 
+                                        % position of lat=S or long=W.
 
 Latitude = num2str(Latitude);
-Longitude = num2str(Longitude);
+Longitude = num2str(Longitude);         % File conversions
 
 DegreesLat = Latitude(:,1:2);
-MinutesLat = Latitude(:,3:4);
+MinutesLat = Latitude(:,3:4);           % Extracts degrees and minutes
 
 
 
