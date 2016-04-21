@@ -106,8 +106,6 @@ for alpha=0:pi/200:2*pi
      circle(h,2) = DecimalLat(k,1) + (RadiusArray(k,1)/60*sin(alpha))*cos((DecimalLat(k,1)*pi)/180);
      h=h+1;
 end
-circle(h,1) = circle(2,1);
-circle(h,2) = circle(2,2);
 DecimalLongCircle(:,k) = circle(:,1);
 DecimalLatCircle(:,k) = circle(:,2);
 circles(k,:) = geoshape(DecimalLatCircle(:,k),DecimalLongCircle(:,k),'Name',NOTAM_NAME);
@@ -120,4 +118,4 @@ DecimalLongCircle = transpose(DecimalLongCircle);
 
 % kmlwritepoint('NOTAMoverlay',DecimalLat,DecimalLong,'Name',NOTAM_NAME,'Description',NOTAM_BRIEF);
 
-kmlwrite('NOTAMOverlay.kml',circles,'Name',NOTAM_Filtered.NOTAM_ID,'Description',NOTAM_Filtered.BODY);
+kmlwrite('NOTAMoverlay.kml',circles,'Name',NOTAM_Filtered.NOTAM_ID,'Description',NOTAM_Filtered.BODY);
