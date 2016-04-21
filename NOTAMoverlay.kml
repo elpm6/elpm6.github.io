@@ -5,7 +5,8 @@
       <Placemark>
          <Snippet maxLines="0"> </Snippet>
          <description> </description>
-         <name>Polygon 1</name>
+         <name>	
+&#xD;</name>
          <Polygon>
             <outerBoundaryIs>
                <LinearRing>
