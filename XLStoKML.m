@@ -106,6 +106,8 @@ for alpha=0:pi/200:2*pi
      circle(h,2) = DecimalLat(k,1) + (RadiusArray(k,1)/60*sin(alpha))*cos((DecimalLat(k,1)*pi)/180);
      h=h+1;
 end
+circle(h+1,1) = DecimalLong(k,1) + (RadiusArray(k,1)/60*cos(alpha))*cos((DecimalLong(k,1)*pi)/180);
+circle(h+1,2) = DecimalLat(k,1) + (RadiusArray(k,1)/60*sin(alpha))*cos((DecimalLat(k,1)*pi)/180);
 DecimalLongCircle(:,k) = circle(:,1);
 DecimalLatCircle(:,k) = circle(:,2);
 circles(k,:) = geoshape(DecimalLatCircle(:,k),DecimalLongCircle(:,k),'Name',NOTAM_NAME);
