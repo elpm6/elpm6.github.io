@@ -5,9 +5,9 @@ NOTAM = readtable('Notams.xlsx');
 NOTAM(:,1:7) = []; % Eliminate bullcrap columns
 NOTAM(1:2,:) = [];
 NOTAM.Properties.VariableNames = {'NOTAM_ID' 'FROM' 'TO' 'Q_CODE' 'POSITION' 'POSITION_RADIUS' 'LOWER_ALT' 'UPPER_ALT' 'IFR_VFR' 'FLIGHT_PHASE' 'LOWER_FL' 'UPPER_FL' 'BODY'};
-
+NOTAMSAFE = readtable('NOTAM SAFE.xlsx');
 NOTAMkey = readtable ('NOTAMDecode.xlsx');
-clear vars B Array_C b Array_Colour
+%clear vars B Array_C b Array_Colour
 NOTAMlegend = cellstr(NOTAMkey{:,1});
 
 % Renames the variable columns to the above, was prior var1, var2....
@@ -25,7 +25,17 @@ for i = 1:1:RowNumber(1,1)
     end
 end                                 % for loop changes position and radius
                                     % to char
+Position_Radius_delete = NOTAM_Filtered{:,6};
+Position_Radius_delete = char(Position_Radius_delete);
+Radius_delete = Position_Radius_delete(:,12:14);          % Extracts different fields
+Radius_Array_delete = str2num(Radius_delete(:,:));
+Delete_Radius = find(Radius_Array_delete>=999);
+NOTAM_Filtered(Delete_Radius,:)=[]; 
 
+RowNumber = size(NOTAM_Filtered(:,1));
+
+NOTAM_Filtered(RowNumber(1,1)+1,:) = NOTAMSAFE(1,:);
+                                    
 Position_Radius = NOTAM_Filtered{:,6};
 Position_Radius = char(Position_Radius);
 LatitudeNS = Position_Radius(:,1:5);
@@ -33,8 +43,7 @@ LongitudeEW = Position_Radius(:,6:11);
 Radius = Position_Radius(:,12:14);          % Extracts different fields
 Radius_Array = str2num(Radius(:,:));
 
-Delete_Radius = find(Radius_Array>=999);
-NOTAM_Filtered(Delete_Radius,:)=[];
+
 
 
 RowNumber = size(NOTAM_Filtered);
@@ -79,6 +88,10 @@ DecimalLat = abs(DegreesLatDBL) + abs(MinutesLatDBL)/60;
 
 DegreesLong = Longitude(:,1:3);
 MinutesLong = Longitude(:,4:5);
+
+RowNumber = size(NOTAM_Filtered);
+NOTAM_Filtered(RowNumber(1,1),:)=[];
+RowNumber = size(NOTAM_Filtered);
 
 for k = 1:RowNumber(1,1)
 DegreesLongDBL(k,:) = str2double(DegreesLong(k,:));
@@ -125,7 +138,6 @@ DecimalLongCircle = transpose(DecimalLongCircle);
 Array_A = NOTAM_Filtered{:,4};
 
 RowNumber = size(NOTAM_Filtered);
-
 for k = 1:RowNumber(1,1)
     B = Array_A{k,1};
 Array_C(k,:) = B(1,10:11);
