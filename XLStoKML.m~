@@ -10,13 +10,13 @@ NOTAMkey = readtable ('NOTAMDecode.xlsx');
 clear vars B Array_C b Array_Colour
 NOTAMlegend = cellstr(NOTAMkey{:,1});
 
+
 % Renames the variable columns to the above, was prior var1, var2....
 
 NOTAM_Filtered = NOTAM;
 RowNumber = size(NOTAM(:,1));               
 pseudo_i = 1;       
 for i = 1:1:RowNumber(1,1)
-    Check_cell = char(NOTAM{i,6});
     Check_cell = size(Check_cell);
     if Check_cell(1,2) == 0
         NOTAM_Filtered(pseudo_i,:) = [];
@@ -137,6 +137,7 @@ for k = 1:RowNumber(1,1)
     Array_Colour(k,:) = NOTAMkey{b,2};
 end
 
+
 % kmlwritepoint('NOTAMoverlay',DecimalLat,DecimalLong,'Name',NOTAM_NAME,'Description',NOTAM_BRIEF);
 
-kmlwrite('NOTAMoverlay.kml',circles,'Name',NOTAM_Filtered.NOTAM_ID,'Description',NOTAM_Filtered.BODY,'Color',Array_Colour);
+kmlwrite('NOTAMoverlay.kml',circles,'Name',NOTAM_Filtered.NOTAM_ID,'Description',NOTAM_Filtered.BODY);

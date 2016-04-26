@@ -1,0 +1,14 @@
+NOTAMkey = readtable ('NOTAMDecode.xlsx');
+
+Array_A = NOTAM_Filtered{:,4};
+
+RowNumber = size(NOTAM_Filtered);
+
+for k = 1:RowNumber(1,1)
+    B = Array_A{k,1};
+Array_C(k,:) = char(B(1,10:11));
+end
+
+for k = 1:RowNumber(1,1)
+    b = find(Arra
+    Array_Colour = 
