@@ -86,8 +86,8 @@ end
 
 DecimalLat = abs(DegreesLatDBL) + abs(MinutesLatDBL)/60;
 
-DegreesLong = Longitude(:,1:3);
-MinutesLong = Longitude(:,4:5);
+DegreesLong = Longitude(:,2:4);
+MinutesLong = Longitude(:,5:6);
 
 RowNumber = size(NOTAM_Filtered);
 NOTAM_Filtered(RowNumber(1,1),:)=[];
